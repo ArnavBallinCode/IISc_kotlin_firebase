@@ -19,4 +19,4 @@ An Android app built with Kotlin, using MVVM architecture and DataBinding for se
 [12]: https://developer.android.com/guide/navigation
 [13]: https://firebase.google.com/docs/functions
 [14]: https://firebase.google.com/docs/firestore
->>>>>>> 9063ecd (Work in progress)
+(Work in progress)
