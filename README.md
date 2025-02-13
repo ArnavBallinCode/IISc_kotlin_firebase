@@ -1,10 +1,6 @@
  HEAD
 # IISc_kotlin_firebase
 An Android app built with Kotlin, using MVVM architecture and DataBinding for seamless UI updates. Implements Google Sign-In and Phone OTP Authentication via Firebase.
-=======
-
----
-* This is not an officially supported Google product.
 
 [1]: https://kotlinlang.org/
 [2]: https://firebase.google.com/docs/auth
@@ -18,5 +14,4 @@ An Android app built with Kotlin, using MVVM architecture and DataBinding for se
 [11]: https://firebase.google.com/docs/android/setup
 [12]: https://developer.android.com/guide/navigation
 [13]: https://firebase.google.com/docs/functions
-[14]: https://firebase.google.com/docs/firestore
-(Work in progress)
+[14]: https://firebase.google.com/docs/firestore 
