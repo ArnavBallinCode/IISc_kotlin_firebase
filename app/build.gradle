@@ -1,0 +1,63 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.devtools.ksp)
+    alias(libs.plugins.hilt.android)
+    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.google.services) // 👈 Add this line for Firebase
+}
+
+android {
+    namespace = "ro.alexmamo.firebasesigninwithemailandpassword"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "ro.alexmamo.firebasesigninwithemailandpassword"
+        minSdk = 26
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_19
+        targetCompatibility = JavaVersion.VERSION_19
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_19.toString()
+    }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.compose.get()
+    }
+}
+
+dependencies {
+
+    // Firebase (use version from libs.versions.toml)
+    implementation(platform(libs.firebase.bom)) // Use version from catalog
+    implementation(libs.firebase.auth) // Authentication
+    implementation(libs.firebase.analytics) // Analytics
+
+
+    // Jetpack Compose
+    implementation(platform(libs.compose.bom))
+    implementation(libs.compose.material)
+    implementation(libs.compose.material.icons)
+
+    // Navigation
+    implementation(libs.navigation.compose)
+
+    // Hilt (Dependency Injection)
+    implementation(libs.hilt)
+    implementation(libs.hilt.navigation.compose)
+    ksp(libs.hilt.compiler)
+
+    // Serialization (Kotlinx)
+    implementation(libs.serialization)
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "13014065364",
+    "project_id": "iisc-kotlin",
+    "storage_bucket": "iisc-kotlin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13014065364:android:edd9d2baff6361f3db5b41",
+        "android_client_info": {
+          "package_name": "ro.alexmamo.firebasesigninwithemailandpassword"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjhccbWwyKNYll3UcBQxeg5iiWpYQpaL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
